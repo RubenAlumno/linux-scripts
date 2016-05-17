@@ -1,18 +1,13 @@
 #! /bin/bash
-# ${1}= Dime el primer número
-# ${2}= Dime el segundo número
 
-echo "Hoy haremos magia para ello te he pedido que pongas dos números "
+VALOR1=2
+VALOR2=30
+resultado=`expr ${VALOR1} + ${VALOR2}`
 
-echo "Te voy a sumar esos dos numeros sin usar la calculadora"
-
-echo "Tu primer número es ${1} y tu segundo es ${2} "
-
-echo "Es todo correcto, si es así pues dale al intro y hare magia"
+echo  Los números son ${VALOR1} y  ${VALOR2}
 
 read foo
 
-echo "Tu solución es:"
+echo "La solución es:"
 
-$1 + $2
-
+echo ${resultado}
