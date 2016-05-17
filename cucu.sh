@@ -7,4 +7,4 @@ read nombre1
 
 echo  A ver si esta ON o OFF?
 
-who $nombre1 
+echo Buscando ... | who $nombre1 && si esta ON || No está ON
